@@ -1,0 +1,8 @@
+algoritmo "MeuNome"
+var
+  nome: caractere
+inicio
+  Escreva("Diga-me Seu Nome: ")
+  leia(nome)
+  Escreva("Seja Bem-Vindo ", nome)
+fimalgoritmo
