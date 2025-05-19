@@ -1,0 +1,9 @@
+algoritmo "Creusza02"
+var
+   Reais, Dolar: real
+inicio
+      Escreva("Quantos reais serao convertidos? R$")
+      Leia(Reais)
+      Dolar <- Reais/5
+      Escreva("Apos a conversao voce tera US$", Dolar)
+fimalgoritmo
