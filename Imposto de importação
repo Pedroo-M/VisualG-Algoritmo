@@ -1,0 +1,9 @@
+algoritmo "Creusza04"
+var
+   Taxa, Compras: Real
+inicio
+      Escreva("Qual o valor das suas compras? US$")
+      Leia(Compras)
+      Taxa <- (Compras * 60) / 100
+      Escreval("A taxa a ser paga e de: US$",Taxa:5:2)
+fimalgoritmo
