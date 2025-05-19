@@ -1,0 +1,12 @@
+algoritmo "Creusza"
+var
+   Emprestimo, Parcelas, Valor_Total, Valor_Parcelado: Real
+inicio
+      Escreva("De quanto sera o emprestimo? R$")
+      Leia(Emprestimo)
+      Valor_Total <- Emprestimo * 0.2 + Emprestimo
+      Escreva("Qual sera a quantidade de parcelas? ")
+      Leia(Parcelas)
+      Valor_Parcelado <- Valor_Total / Parcelas
+      Escreva("O valor sera de", Parcelas," parcelas de R$", Valor_Parcelado, " cada.")
+fimalgoritmo
