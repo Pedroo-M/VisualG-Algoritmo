@@ -1,0 +1,9 @@
+algoritmo "Creusza03"
+var
+   F, C: real
+inicio
+      Escreva("Qual a temperatura em Fahrenheit? ")
+      Leia(F)
+      C <- (f - 32) / 1.8
+      Escreva("A temperatura em Celsius e: ", C:4:1)
+fimalgoritmo
