@@ -1,0 +1,22 @@
+algoritmo "Aprovado Ou Reprovado"
+var
+   Media, N1, N2: Real
+inicio
+      Escreval("------------------------")
+      Escreval(" ESCOLA DO ROCK")
+      Escreval("------------------------")
+      Escreva(" PRIMEIRA NOTA:")
+      Leia(N1)
+      Escreva(" SEGUNDA NOTA:")
+      Leia(N2)
+      Escreval("------------------------")
+      Media <- (N1 + N2) / 2
+      Escreval(" MEDIA: ", media:2:1)
+      Se (Media >= 5) entao
+         Escreval(" ALUNO APROVADO")
+      Senao
+           Escreval(" ALUNO REPROVADO")
+      FimSe
+      Escreval("------------------------")
+
+fimalgoritmo
