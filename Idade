@@ -1,0 +1,13 @@
+algoritmo "Creusza"
+var
+   Data_Atual, Idade, Ano_Nasc: Inteiro
+   
+inicio
+      Escreva("Em que ano estamos? ")
+      Leia(Data_Atual)
+      Escreva("Em que ano vc nasceu? ")
+      Leia(Ano_Nasc)
+      Idade <- Data_Atual - Ano_Nasc
+      Escreva(" Sua idade e: ", Idade)
+
+fimalgoritmo
