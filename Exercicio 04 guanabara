@@ -12,7 +12,7 @@ inicio
       D <- T1 - T2
       M <- Abs(D)
       EscrevaL(" Diferenca: ", M)
-      Escolha D
+      Escolha M
               Caso 0
                    EscrevaL(" STATUS: EMPATE")
               Caso 1, 2, 3
