@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+   D, T1, T2, M: Inteiro
+inicio
+      EscrevaL(" CORINTHIANS X PALMEIRAS")
+      EscrevaL("--------------------------")
+      EscrevaL("Quantos gols fez o Corinthians? ")
+      Leia(T1)
+      EscrevaL("Quantos gols fez o Palmeiras? ")
+      Leia(T2)
+      EscrevaL("--------------------------")
+      D <- T1 - T2
+      M <- Abs(D)
+      EscrevaL(" Diferenca: ", M)
+      Escolha D
+              Caso 0
+                   EscrevaL(" STATUS: EMPATE")
+              Caso 1, 2, 3
+                   EscrevaL(" STATUS: PARTIDA NORMAL")
+              Caso 4, 5, 6
+                   EscrevaL(" STATUS: GOLEADA")
+              OutroCaso
+                       EscrevaL(" STATUS: GOLEADA HISTORICA")
+      FimEscolha
+fimalgoritmo
