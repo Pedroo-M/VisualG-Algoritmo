@@ -1,0 +1,23 @@
+algoritmo "semnome"
+var
+   N1, N2 : Inteiro
+inicio
+      Escreval("------------------------")
+      Escreval("  Contagem Inteligente")
+      Escreval("------------------------")
+      Escreval("INICIO: ")
+      Leia(N1)
+      Escreval("FIM: ")
+      Leia(N2)
+      EscrevaL("------------------------")
+      Escreval("  C O N T A N D O")
+      Escreval("------------------------")
+      Enquanto (N1 <= N2)  Faca
+               Escreva(N1,"...")
+               N1 <- N1 +1
+      FimEnquanto
+      Enquanto (N1 >= N2)  Faca
+               Escreva(N1,"...")
+               N1 <- N1 - 1
+      FimEnquanto
+fimalgoritmo
