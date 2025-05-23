@@ -1,0 +1,27 @@
+algoritmo "semnome"
+var
+   A, N , Nota, MaiorNota: Inteiro
+   Nome, TopAluno : Caractere
+inicio
+      N <- 1
+      EscrevaL("-------------------------------")
+      EscrevaL(" Escola Patriarca Sao Miguel")
+      EscrevaL("-------------------------------")
+      EscrevaL("Quantos Alunos a Sala tem? ")
+      Leia(A)
+      Enquanto (N <= A) Faca
+               EscrevaL("-----------------------")
+               EscrevaL("Aluno ", N)
+               Escreva("Nome do Aluno: ")
+               Leia(Nome)
+               Escreva("Nota de ", Nome,":")
+               Leia(Nota)
+               Se (Nota > MaiorNota) entao
+                  MaiorNota <- Nota
+                  TopAluno <- Nome
+               FimSe
+               N <- N + 1
+      FimEnquanto
+      EscrevaL("-----------------------")
+      EscrevaL("O melhor aproveitamento foi de ", TopAluno," com a nota ", MaiorNota)
+fimalgoritmo
