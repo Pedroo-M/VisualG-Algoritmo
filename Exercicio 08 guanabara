@@ -1,0 +1,36 @@
+algoritmo "SeletorDePessoas"
+var
+   I, C, M, F: Inteiro
+   S, Esc: Caractere
+inicio
+      Repita
+            EscrevaL("====================")
+            EscrevaL(" Seletor de Pessoas")
+            EscrevaL("====================")
+            EscrevaL("Qual o Sexo? [M/F] ")
+            Leia(S)
+            EscrevaL("Qual a idade? ")
+            Leia(I)
+            EscrevaL("Qual a cor do cabelo? ")
+            EscrevaL("-------------------------")
+            EscrevaL("[1] Preto")
+            EscrevaL("[2] Castanho")
+            EscrevaL("[3] Loiro")
+            EscrevaL("[4] Ruivo")
+            Leia(C)
+            EscrevaL("Quer continuar? [S/N]")
+            Leia(Esc)
+            Se (S = "M") e (i >= 18) e (C = 2) entao
+               M <- M +1
+            FimSe
+            Se (S = "F") e (I >= 25) e (I <= 30) e (C = 3) entao
+               F <- F + 1
+            FimSe
+            LimpaTela
+      Ate (Esc = "N")
+      EscrevaL("-----------------------------------")
+      EscrevaL(" RESULTADO FINAL")
+      EscrevaL("-----------------------------------")
+      EscrevaL("Total de Homens com mais de 18 e cabelos castanhos: ", M)
+      EscrevaL("Total de mulheres entre 25 e 30 anos e cabelos loiros: ", F)
+fimalgoritmo
