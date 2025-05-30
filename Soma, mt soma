@@ -1,0 +1,26 @@
+algoritmo "semnome"
+var
+   C, Soma, V, Par, Div5, Null : Inteiro
+   M : Real
+inicio
+      Para C <- 1 ate 5 faca
+           Escreva("Digite o ", C,". Valor ")
+           Leia(V)
+           Soma <- Soma + V
+           Se (V%2=0) entao
+              Par <- Par + V
+           FimSe
+           Se (V%5=0) entao
+              Div5 <- Div5 + 1
+           FimSe
+           Se (V = 0) entao
+              Null <- Null + 1
+           FimSe
+      FimPara
+      M <- Soma / (C-1)
+      EscrevaL("A soma entre os valores e: ", Soma)
+      EscrevaL("A media entre os valores e", M)
+      EscrevaL("Valores divisiveis por cinco: ", Div5)
+      EscrevaL("Valores Nulos: ", Null)
+      EscrevaL("A soma dos valores pares e: ", Par)
+fimalgoritmo
