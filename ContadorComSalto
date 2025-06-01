@@ -1,0 +1,20 @@
+algoritmo "ContadorComSalto"
+var
+   X, Y, Z: Inteiro
+Procedimento Contador(var A, B, C : Inteiro)
+Inicio
+      Repita
+            Escreva(A)
+            A <- A + B
+      Ate (A = C )
+FimProcedimento
+inicio
+      EscrevaL(" Digite o numero inicial: ")
+      Leia(X)
+      EscrevaL(" Digite o valor do salto: ")
+      Leia(Y)
+      EscrevaL(" Digite o numero final: ")
+      Leia(Z)
+      Contador(X, Y, Z)
+      Escreva(X)
+fimalgoritmo
