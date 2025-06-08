@@ -1,0 +1,41 @@
+algoritmo "semnome"
+var
+   Aluno: Vetor[1..3] de Caractere
+   Questao: Vetor[1..5] de Caractere
+   N: Vetor[1..3] de Real
+   C, I: Inteiro
+   Alt: Caractere
+   Media: Real
+inicio
+      EscrevaL("PASSO 1 - Cadastro de Gabarito")
+      EscrevaL("----------------------------------")
+      Para C <- 1 ate 5 faca
+           EscrevaL("Questao ", C,":")
+           Leia(Questao[C])
+      FimPara
+      LimpaTela
+      Para C <- 1 ate 3 faca
+           EscrevaL("------------------------------")
+           EscrevaL("Aluno ", C)
+           EscrevaL("------------------------------")
+           EscrevaL("Nome :")
+           Leia(Aluno[C])
+            Para I <- 1 ate 5 faca
+                 EscrevaL("RESPOSTAS DADAS")
+                 EscrevaL("Questao ", I,":")
+                 Leia(Alt)
+                     Se(Alt = Questao[I]) entao
+                       N[C] <- N[C] + 2
+                     FimSe
+            FimPara
+            LimpaTela
+      FimPara
+      EscrevaL("NOTAS FINAIS")
+      EscrevaL("--------------------------------")
+      Para C <- 1 ate 3 faca
+           EscrevaL(Aluno[C]:11, N[C])
+      FimPara
+      EscrevaL("--------------------------------")
+      Media <- (N[1] + N[2] + N[3]) / 3
+      Escreva("Media da Turma: ", Media:2:1)
+fimalgoritmo
