@@ -1,0 +1,32 @@
+algoritmo "SalaDeAula"
+var
+   Nome: Vetor[1..4] de Caractere
+   N1: Vetor[1..4] de Real
+   N2: Vetor[1..4] de Real
+   M: Vetor[1..4] de Real
+   SM, MT, Tot: Real
+   I: Inteiro
+inicio
+      Para i <- 1 ate 4 faca
+           EscrevaL("ALUNO ", i)
+           Escreva("Nome: ")
+           Leia(Nome[i])
+           Escreva("Primeira Nota: ")
+           Leia(N1[i])
+           Escreva("Segunda Nota: ")
+           Leia(N2[i])
+           M[i] <- (N1[i] + N2[i]) / 2
+           SM <- SM + M[i]
+      FimPara
+      MT <- SM / 4
+      LimpaTela
+      EscrevaL("Listagem de Alunos")
+      EscrevaL("----------------------")
+      Para i <- 1 ate 4 faca
+           EscrevaL(Nome[i]:15, M[i])
+           Se (M[i] > MT) entao
+              Tot <- Tot + 1
+           FimSe
+      FimPara
+      Escreva("Ao todo temos ", Tot," alunos acima da media, que e: ", MT:4:1)
+fimalgoritmo
