@@ -1,0 +1,39 @@
+algoritmo "Matrizes02"
+var
+   M: Vetor[1..4, 1..4] de Inteiro
+   L, C, S, p2L, Maior: Inteiro
+inicio
+      S <- 0
+      p2L <- 1
+      Para L <- 1 ate 4 faca
+           Para C <- 1 ate 4 faca
+                Escreva("Digite o valor da posicao [", L, ",", C, "] : ")
+                Leia(M[L, C])
+                Se (L = C) Entao
+                   S <- S + M[L, C]
+                FimSe
+           FimPara
+      FimPara
+      
+      Para L <- 1 ate 4 faca
+           Para C <- 1 ate 4 faca
+                Escreva(M[L, C]:4)
+                
+           FimPara
+           EscrevaL()
+      FimPara
+      
+      Para C <- 1 ate 4 faca
+           p2L <- p2L * M[2, C]
+      FimPara
+      
+      Para L <- 1 ate 4 faca
+           Se (Maior < M[L, 3]) Entao
+              Maior <- M[L, 3]
+           FimSe
+      FimPara
+      
+      EscrevaL("A Soma dos valores da diagonal principal e: ", S)
+      EscrevaL("O Produto dos valores da segunda linha e: ", p2L)
+      EscrevaL("O Maior numero da terceira coluna foi: ", Maior)
+fimalgoritmo
